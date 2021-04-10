@@ -25,5 +25,6 @@ plt.plot(X, [f(x) for x in X], color = "orange", linewidth = 5)
 plt.plot(X, W, linewidth = 3) # autodefined color (will be different from previous ones)
 plt.plot(X, h(X), color = "green", linewidth = 3)
 
-plt.show()
+# mage is closed and freed from memory after show() method.
 plt.savefig("graph")
+plt.show()
